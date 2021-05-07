@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="1sp"
+    android:background="@color/blue_grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@color/blue_grey_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dummy_img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            tools:src="@tools:sample/avatars"
+            android:padding="2dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dummy_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                tools:text="username"
+                android:textColor="@color/white"
+                android:fontFamily="casual"/>
+
+            <TextView
+                android:id="@+id/dummy_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:textSize="16dp"
+                tools:text="name"
+                android:textColor="@color/white"
+                android:drawableStart="@drawable/ic_baseline_alternate_email_24"
+                android:fontFamily="casual"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
